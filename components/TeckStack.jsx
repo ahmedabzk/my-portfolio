@@ -26,7 +26,7 @@ function TeckStack() {
           Technologies I’ve been working with recently
         </p>
       </div>
-      <div className="mt-12 mb-10 flex justify-center items-center flex-wrap gap-5">
+      <div className="container mt-12 mb-10 flex justify-center items-center flex-wrap gap-5">
         <FaHtml5 className="w-16 h-16 text-[#E44F26]" />
         <SiTailwindcss className="w-16 h-16 text-[#44A8B3]" />
         <IoLogoJavascript className="w-16 h-16 text-[#F5DE19]" />

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -39,7 +40,12 @@ function NavBar() {
           href="/"
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          <Image
+            src="/images/logo-transparent.png"
+            alt="logo"
+            width={100}
+            height={100}
+          />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

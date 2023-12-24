@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import ThemeToggle from "./ThemeToggle";
 
 const menuItemsData = [
   {
@@ -34,7 +35,7 @@ function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const pathName = usePathname();
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+    <nav className="flex z-10 dark:bg-[#121212] ">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href="/"
@@ -52,7 +53,7 @@ function NavBar() {
             <div>
               <button
                 onClick={() => setNavbarOpen(true)}
-                className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+                className="flex items-center px-3 py-2 border rounded border-slate-500 text-slate-500 hover:text-black hover:border-black dark:hover:text-white dark:hover:border-white"
               >
                 <Bars3Icon className="h-5 w-5" />
               </button>
@@ -60,7 +61,7 @@ function NavBar() {
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-800 text-slate-800 hover:text-black hover:border-black dark:border-slate-200 dark:text-slate-200 dark:hover:text-white dark:hover:border-white"
             >
               <XMarkIcon className="h-5 w-5" />
             </button>
@@ -72,7 +73,7 @@ function NavBar() {
               <li key={index}>
                 <Link
                   href={menuItem.url}
-                  className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
+                  className="block py-2 pl-3 pr-4  text-slate-600 hover:text-slate-950 dark:text-[#ADB7BE] sm:text-xl rounded md:p-0 dark:hover:text-white"
                 >
                   {menuItem.title}
                 </Link>
@@ -80,6 +81,7 @@ function NavBar() {
             ))}
           </ul>
         </div>
+        <ThemeToggle />
       </div>
       {navbarOpen ? <MenuOverlay links={menuItemsData} /> : null}
     </nav>
@@ -91,7 +93,7 @@ export default NavBar;
 const MenuOverlay = ({ links }) => {
   return (
     <ul
-      className="flex flex-col py-4 items-center "
+      className="flex flex-col py-4 items-center justify-center "
       role="menu"
       data-popover="menu"
       data-popover-placement="bottom"
@@ -100,7 +102,7 @@ const MenuOverlay = ({ links }) => {
         <li key={index} role="menuitem">
           <Link
             href={link.url}
-            className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white"
+            className="block py-2 pl-3 pr-4 text-slate-600 hover:text-slate-950 dark:text-[#ADB7BE] sm:text-xl rounded md:p-0 dark:hover:text-white"
           >
             {link.title}
           </Link>

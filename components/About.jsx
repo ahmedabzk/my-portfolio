@@ -57,8 +57,8 @@ function About() {
           className="flex-1 mt-7 object-contain"
         />
         <div className="flex-1 mt-5 w-auto ml-16 flex flex-col">
-          <h1 className="text-3xl font-bold text-[#FFFFFF] mt-2">About Me</h1>
-          <p className="text-[#ABB5BC] font-medium mt-2">
+          <h1 className="text-3xl font-bold dark:text-[#FFFFFF] mt-2">About Me</h1>
+          <p className="dark:text-[#ABB5BC] font-medium mt-2">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React,Nextjs, Rust Redux, Node.js, Express, PostgreSQL,

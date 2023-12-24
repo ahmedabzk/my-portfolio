@@ -21,8 +21,8 @@ function TeckStack() {
   return (
     <section className="mt-16 flex flex-col items-center" id="teck-stack">
       <div className="flex flex-col gap-2">
-        <h1 className="font-bold text-[#B5B5B5] text-4xl">My Tech Stack</h1>
-        <p className="text-[#ECECEC] font-semibold text-2xl">
+        <h1 className="font-bold text-slate-600 dark:text-[#B5B5B5] text-4xl">My Tech Stack</h1>
+        <p className="text-slate-700 dark:text-[#ECECEC] font-semibold text-xl">
           Technologies I’ve been working with recently
         </p>
       </div>
@@ -39,7 +39,7 @@ function TeckStack() {
         <LiaNode className="w-20 h-20 text-green-600" />
         <SiMysql className="w-20 h-20 text-[#E78E00]" />
         <SiMongodb className="w-20 h-20 text-[#54B542]" />
-        <SiNextdotjs className="w-20 h-20 text-[#FFFFFF]" />
+        <SiNextdotjs className="w-20 h-20 text-slate-950 dark:text-[#FFFFFF]" />
       </div>
     </section>
   );

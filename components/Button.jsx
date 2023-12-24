@@ -6,10 +6,10 @@ const variants = {
 };
 
 function Button({ active, selected, children }) {
-  const buttonClass = active ? "text-white" : "text-[#ADB7BE]";
+  const buttonClass = active ? "dark:text-white" : "text-[#ADB7BE]";
   return (
     <button onClick={selected}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClass}`}>
+      <p className={`mr-3 font-semibold dark:hover:text-white ${buttonClass}`}>
         {children}
       </p>
       <motion.div

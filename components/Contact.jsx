@@ -7,10 +7,10 @@ function Contact() {
   return (
     <section className="mt-12 flex flex-col sm:flex-row w-full" id="contact">
       <div className="mb-4 mt-10 flex-1">
-        <h1 className="text-2xl font-bold text-[#FFFFFF]">
+        <h1 className="text-2xl font-bold dark:text-[#FFFFFF]">
           Let&apos;s Connect
         </h1>
-        <p className="text-[#ABB5BC] font-medium">
+        <p className="text-slate-600 dark:text-[#ABB5BC] font-medium">
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!

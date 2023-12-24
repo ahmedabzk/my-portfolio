@@ -13,7 +13,7 @@ function HeroSection() {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="dark:text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600">
               Hello, I&apos;m{" "}
             </span>
@@ -32,7 +32,7 @@ function HeroSection() {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p className="dark:text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             voluptuous.
           </p>
@@ -43,7 +43,7 @@ function HeroSection() {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mt-2">
             <Image
               src="/images/photo6.png"
               alt="hero image"

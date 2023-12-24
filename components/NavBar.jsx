@@ -35,7 +35,7 @@ function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const pathName = usePathname();
   return (
-    <nav className="flex z-10 dark:bg-[#121212] ">
+    <nav className="fixed mx-auto border border-slate-300 dark:border-[#33353F] top-0 left-0 right-0 z-10 bg-slate-200 dark:bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href="/"

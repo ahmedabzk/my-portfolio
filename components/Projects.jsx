@@ -66,9 +66,10 @@ const ProjectsData = [
 function Projects() {
   return (
     <section
-      className="mt-5 mb-5 flex items-center justify-center"
+      className="mt-5 mb-5"
       id="projects"
     >
+      <h1 className="text-lg font-semibold text-center mb-4">Projects</h1>
       <div className="flex flex-col sm:flex-row gap-6 flex-wrap">
         {ProjectsData &&
           ProjectsData.map((project, index) => (
@@ -90,39 +91,39 @@ function Projects() {
                   className="w-full h-[270px] object-cover"
                 />
               </motion.div>
-             
-                <h2 className="text-sm font-semibold text-slate-700 dark:text-slate-200 ml-2 mt-4">
-                  {project.title}
-                </h2>
-                <p className="text-sm text-slate-600 dark:text-slate-300 ml-2">
-                  {project.discription}
-                </p>
-                <p className="text-sm text-slate-400 dark:text-slate-300 ml-2">
-                  <span className="text-slate-700 dark:text-slate-200 font-semibold">
-                    Teck stack:
-                  </span>{" "}
-                  {project.TechStack}
-                </p>
-                <div className="flex justify-between w-full">
-                  <div className="flex gap-2 items-center">
-                    <IoIosLink />
-                    <Link
-                      href={project.websitUrl}
-                      className="text-slate-600 dark:text-slate-300"
-                    >
-                      Live Preview
-                    </Link>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <FaGithub className="" />
-                    <Link
-                      href={project.githubUrl}
-                      className="text-slate-600 dark:text-slate-300"
-                    >
-                      View Code
-                    </Link>
-                  </div>
+
+              <h2 className="text-sm font-semibold text-slate-700 dark:text-slate-200 ml-2 mt-4">
+                {project.title}
+              </h2>
+              <p className="text-sm text-slate-600 dark:text-slate-300 ml-2">
+                {project.discription}
+              </p>
+              <p className="text-sm text-slate-400 dark:text-slate-300 ml-2">
+                <span className="text-slate-700 dark:text-slate-200 font-semibold">
+                  Teck stack:
+                </span>{" "}
+                {project.TechStack}
+              </p>
+              <div className="flex justify-between w-full">
+                <div className="flex gap-2 items-center">
+                  <IoIosLink />
+                  <Link
+                    href={project.websitUrl}
+                    className="text-slate-600 dark:text-slate-300"
+                  >
+                    Live Preview
+                  </Link>
                 </div>
+                <div className="flex items-center gap-2">
+                  <FaGithub className="" />
+                  <Link
+                    href={project.githubUrl}
+                    className="text-slate-600 dark:text-slate-300"
+                  >
+                    View Code
+                  </Link>
+                </div>
+              </div>
             </div>
           ))}
       </div>

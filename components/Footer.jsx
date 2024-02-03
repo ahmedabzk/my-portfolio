@@ -1,16 +1,22 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="footer border z-10 border-t-slate-800 border-l-transparent border-r-transparent text-white">
+    <footer className="footer border-t z-10 border-t-slate-300 dark:border-t-slate-50 border-l-transparent border-r-transparent text-white">
       <div className="container p-12 flex justify-between">
-        <Image
-          src="/images/logo-transparent.png"
-          alt="logo"
-          width={70}
-          height={70}
-          className="rounded-full object-cover"
-        />
+        <Link
+          href="/"
+          className="text-2xl md:text-5xl text-white font-semibold"
+        >
+          <Image
+            src="/images/photo5.png"
+            alt="logo"
+            width={40}
+            height={40}
+            className="object-cover rounded-full"
+          />
+        </Link>
         <p className="text-slate-600">All rights reserved.</p>
       </div>
     </footer>

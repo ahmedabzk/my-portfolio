@@ -42,10 +42,11 @@ function NavBar() {
           className="text-2xl md:text-5xl text-white font-semibold"
         >
           <Image
-            src="/images/logo-transparent.png"
+            src="/images/photo5.png"
             alt="logo"
-            width={100}
-            height={100}
+            width={40}
+            height={40}
+            className="object-cover rounded-full"
           />
         </Link>
         <div className="mobile-menu block md:hidden">

@@ -19,6 +19,9 @@ const ABOUT_DATA = [
         <li>Rust</li>
         <li>Nextjs</li>
         <li>MongoDB</li>
+        <li>Solidity</li>
+        <li>Web3</li>
+        <li>Typescript</li>
       </ul>
     ),
   },
@@ -61,7 +64,7 @@ function About() {
           <p className="dark:text-[#ABB5BC] font-medium mt-2">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React,Nextjs, Rust Redux, Node.js, Express, PostgreSQL,
+            working with JavaScript, React,Nextjs, Rust, Node.js, Express, PostgreSQL,
             Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.

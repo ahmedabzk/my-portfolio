@@ -10,7 +10,7 @@ const Footer = () => {
           className="text-2xl md:text-5xl text-white font-semibold"
         >
           <Image
-            src="/images/photo5.png"
+            src="/images/logo1.jpg"
             alt="logo"
             width={40}
             height={40}

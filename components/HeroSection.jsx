@@ -20,7 +20,7 @@ function HeroSection() {
             </span>
             <br></br>
             <TypeAnimation
-              sequence={["Ahmed", 1000, "fullstack Developer", 1000]}
+              sequence={["Ahmed", 1000, "fullstack Developer", 1000, "frontend dev", 1000, "Rust dev", 1000, "web3 dev", 1000, "smart contruct dev", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}

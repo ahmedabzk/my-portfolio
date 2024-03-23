@@ -42,16 +42,17 @@ function NavBar() {
           className="text-2xl md:text-5xl text-white font-semibold"
         >
           <Image
-            src="/images/photo5.png"
+            src="/images/logo1.jpg"
             alt="logo"
-            width={40}
-            height={40}
-            className="object-cover rounded-full"
+            width={50}
+            height={50}
+            className="object-contain rounded-3xl"
           />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
-            <div>
+            <div className="flex gap-8 items-center">
+              <ThemeToggle />
               <button
                 onClick={() => setNavbarOpen(true)}
                 className="flex items-center px-3 py-2 border rounded border-slate-500 text-slate-500 hover:text-black hover:border-black dark:hover:text-white dark:hover:border-white"
@@ -68,6 +69,9 @@ function NavBar() {
             </button>
           )}
         </div>
+        <div className="hidden md:block">
+          <ThemeToggle />
+        </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {menuItemsData.map((menuItem, index) => (
@@ -82,7 +86,6 @@ function NavBar() {
             ))}
           </ul>
         </div>
-        <ThemeToggle />
       </div>
       {navbarOpen ? <MenuOverlay links={menuItemsData} /> : null}
     </nav>

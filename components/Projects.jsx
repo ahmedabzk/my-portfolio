@@ -37,7 +37,7 @@ const ProjectsData = [
     discription:
       "An e-commerce website that serves as a digital marketplace for  businesses to showcase their products,customers can browse, select, purchase, and even review them.This website is designed to provide a seamless shopping experience",
     TechStack: "MERN stack",
-    photo: "/images/ecom.jpg",
+    photo: "/images/ecom.png",
     githubUrl: "https://github.com/ahmedabzk/stunna-electronics",
     websitUrl: "https://stunna-electronics-client.vercel.app/",
   },

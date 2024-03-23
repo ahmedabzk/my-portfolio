@@ -8,24 +8,6 @@ import { motion } from "framer-motion";
 
 const ProjectsData = [
   {
-    title: "Project 1",
-    discription:
-      "Project 1 Project 1 Project 1 Project 1 Project 1 Project 1 Project 1 Project 1",
-    TechStack: "HTML,CSS and JavaScript",
-    photo: "/images/photo2.png",
-    githubUrl: "https://github.com/ahmedabzk",
-    websitUrl: "https://github.com",
-  },
-  {
-    title: "Project 2",
-    discription:
-      "Project 2 Project 2 Project 2 Project 2 Project 2 Project 2 Project 2 Project 2",
-    TechStack: "Tailwind, node js and React",
-    photo: "/images/about-image.png",
-    githubUrl: "https://github.com/ahmedabzk",
-    websitUrl: "https://google.com",
-  },
-  {
     title: "Real estate project",
     discription:
       "This is a fullstack project where you can sell,buy and rent a property",
@@ -35,31 +17,29 @@ const ProjectsData = [
     websitUrl: "https://real-estate-app-eop3.onrender.com",
   },
   {
-    title: "Project 1",
-    discription:
-      "Project 1 Project 1 Project 1 Project 1 Project 1 Project 1 Project 1 Project 1",
-    TechStack: "HTML,CSS and JavaScript",
-    photo: "/images/photo2.png",
-    githubUrl: "https://github.com/ahmedabzk",
-    websitUrl: "https://github.com",
+    title: "My portfolio project",
+    discription: "This my portfolio project",
+    TechStack: "React,Next.js 14,framer-motion and Tailwind",
+    photo: "/images/portfolio.png",
+    githubUrl: "https://github.com/ahmedabzk/my-portfolio",
+    websitUrl: "https://ahmedabzk.dev",
   },
   {
-    title: "Project 2",
-    discription:
-      "Project 2 Project 2 Project 2 Project 2 Project 2 Project 2 Project 2 Project 2",
-    TechStack: "Tailwind, node js and React",
-    photo: "/images/about-image.png",
-    githubUrl: "https://github.com/ahmedabzk",
-    websitUrl: "https://google.com",
+    title: "Web 3 project",
+    discription: "a crowdfunding web3 project",
+    TechStack: "Smart contruct, solidity, thirdweb,React and css",
+    photo: "/images/crowdfunding.png",
+    githubUrl: "https://github.com/ahmedabzk/crowfunding-web3",
+    websitUrl: "https://crowdfunding-client-tau.vercel.app/",
   },
   {
-    title: "Project 3",
+    title: "ecommerce project",
     discription:
-      "Project 2 Project 2 Project 2 Project 2 Project 2 Project 2 Project 2 Project 2",
-    TechStack: "bootstrap and Nextjs",
-    photo: "/images/myself.jpg",
-    githubUrl: "https://github.com/ahmedabzk",
-    websitUrl: "https://google.com",
+      "An e-commerce website that serves as a digital marketplace for  businesses to showcase their products,customers can browse, select, purchase, and even review them.This website is designed to provide a seamless shopping experience",
+    TechStack: "MERN stack",
+    photo: "/images/ecom.jpg",
+    githubUrl: "https://github.com/ahmedabzk/stunna-electronics",
+    websitUrl: "https://stunna-electronics-client.vercel.app/",
   },
 ];
 

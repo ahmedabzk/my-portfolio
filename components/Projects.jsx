@@ -41,6 +41,15 @@ const ProjectsData = [
     githubUrl: "https://github.com/ahmedabzk/stunna-electronics",
     websitUrl: "https://stunna-electronics-client.vercel.app/",
   },
+  {
+    title: "academy project",
+    discription:
+      "I have converted the fellowing  Figma design https://www.figma.com/community/file/1207335614967337554 into a responsive website.",
+    TechStack: "NextJs,TypeScript and Css",
+    photo: "/images/academy-design.png",
+    githubUrl: "https://github.com/ahmedabzk/academy",
+    websitUrl: "https://academy-wine-sigma.vercel.app/",
+  },
 ];
 
 function Projects() {
@@ -55,7 +64,7 @@ function Projects() {
           ProjectsData.map((project, index) => (
             <div
               key={index}
-              className="w-[300px] md:w-[400px] h-[450px] border border-slate-300 dark:border-slate-200 overflow-hidden rounded-lg flex flex-col flex-wrap gap-2 justify-start"
+              className="w-[300px] md:w-[400px] h-auto border shadow-md dark:border-slate-200 overflow-hidden rounded-lg flex flex-col flex-wrap gap-2 justify-start"
             >
               <motion.div
                 whileHover={{ scale: 1.1 }}
@@ -75,7 +84,7 @@ function Projects() {
               <h2 className="text-sm font-semibold text-slate-700 dark:text-slate-200 ml-2 mt-4">
                 {project.title}
               </h2>
-              <p className="text-sm text-slate-600 dark:text-slate-300 ml-2">
+              <p className="text-sm text-slate-600 dark:text-slate-300 ml-2 text-clip">
                 {project.discription}
               </p>
               <p className="text-sm text-slate-400 dark:text-slate-300 ml-2">

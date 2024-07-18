@@ -16,6 +16,7 @@ const ABOUT_DATA = [
         <li>Sequelize</li>
         <li>JavaScript</li>
         <li>React</li>
+        <li>Vue</li>
         <li>Rust</li>
         <li>Nextjs</li>
         <li>MongoDB</li>

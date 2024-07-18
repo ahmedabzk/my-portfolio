@@ -17,9 +17,9 @@ import { SiNextdotjs } from "react-icons/si";
 
 
 
-function TeckStack() {
+function TechStack() {
   return (
-    <section className="mt-16 flex flex-col items-center" id="teck-stack">
+    <section className="mt-16 flex flex-col items-center" id="tech-stack">
       <div className="flex flex-col gap-2">
         <h1 className="font-bold text-slate-600 dark:text-[#B5B5B5] text-4xl">My Tech Stack</h1>
         <p className="text-slate-700 dark:text-[#ECECEC] font-semibold text-xl">
@@ -45,4 +45,4 @@ function TeckStack() {
   );
 }
 
-export default TeckStack
+export default TechStack

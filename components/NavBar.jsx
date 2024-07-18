@@ -18,8 +18,8 @@ const menuItemsData = [
     url: "#about",
   },
   {
-    title: "Teck Stack",
-    url: "#teck-stack",
+    title: "Tech Stack",
+    url: "#tech-stack",
   },
   {
     title: "Projects",
